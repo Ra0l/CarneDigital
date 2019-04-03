@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/ella"
+            android:layout_width="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_ella"
+            />
+
+        <ImageView
+            android:id="@+id/fondo"
+            android:layout_width="400dp"
+            android:layout_height="150px"
+            android:layout_marginLeft="300dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_advantus"/>
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alexandra Mishel "
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="40dp"
+            android:textColor="@color/phone"
+            android:textStyle="bold"
+            android:layout_marginLeft="250dp"
+            android:layout_below="@+id/fondo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Administración"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/phone"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="250dp"
+            android:layout_below="@+id/nombre"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_codigobarra"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
